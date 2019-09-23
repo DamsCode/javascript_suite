@@ -20,8 +20,8 @@
     };
 
     document.getElementById("run").addEventListener("click", e => {
-        const value = inp.value;
-        fetch(`http://localhost:3000/heroes/${Number(value)}`, {
+
+        fetch(`http://localhost:3000/heroes/${Number(inp.value)}`, {
             method: 'DELETE',
         }).then(handlereponse);
     });
